@@ -1,9 +1,8 @@
-/**
- * 
- */
 package com.oop.fourpillars;
 
 /**
+ * Class which contains fields and concrete methods which will be shared across
+ * the subclasses. An abstract method will need to be implemented by all subclasses.
  * @author cgrogan
  *
  */
@@ -71,6 +70,10 @@ public abstract class Pillar {
 	public void setReference(String reference) {
 		this.reference = reference;
 	}
+	
+	/**
+	 * toString Method for ease of output.
+	 */
 	@Override
 	public String toString() {
 		return "\n\n" + pillar 

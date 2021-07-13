@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.oop.fourpillars;
 
 import com.oop.fourpillars.abstraction.Abstraction;
@@ -16,6 +13,7 @@ import com.oop.fourpillars.polymorphism.Polymorphism;
 public class FourPillarsMain {
 
 	/**
+	 * Main method
 	 * @param args
 	 */
 	public static void main(String[] args) {

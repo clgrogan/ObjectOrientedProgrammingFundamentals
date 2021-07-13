@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.oop.fourpillars.inheritance;
 
 import com.oop.fourpillars.Pillar;
