@@ -1,17 +1,18 @@
 /**
  * 
  */
-package com.oop.fourpilars;
+package com.oop.fourpillars;
 
-import com.oop.fourpilars.abstraction.Abstraction;
-import com.oop.fourpilars.encapsulation.Encapsulation;
-import com.oop.fourpilars.polymorphism.Polymorphism;
+import com.oop.fourpillars.abstraction.Abstraction;
+import com.oop.fourpillars.encapsulation.Encapsulation;
+import com.oop.fourpillars.inheritance.Inheritance;
+import com.oop.fourpillars.polymorphism.Polymorphism;
 
 /**
  * @author cgrogan
  *
  */
-public class FourPilarsMain {
+public class FourPillarsMain {
 
 	/**
 	 * @param args
@@ -21,6 +22,8 @@ public class FourPilarsMain {
 		encapsulation();
 		abstraction();
 		polymorphism();
+		inheritance();
+		
 
 	}
 
@@ -64,7 +67,7 @@ public class FourPilarsMain {
 	private static void abstraction() {
 		Abstraction abstraction = new Abstraction();
 		
-		abstraction.setPilar("Abstraction");
+		abstraction.setPillar("Abstraction");
 		abstraction.setDefinition(
 				"In Object-oriented programming, abstraction is a process of hiding the "
 				+ "\n\timplementation details from the user, only the functionality will be provided to the user. "
@@ -73,7 +76,7 @@ public class FourPilarsMain {
 		abstraction.setReference("Tutorials Point. https://www.tutorialspoint.com/java/java_abstraction.htm");
 		
 		System.out.println(abstraction.toString());
-		System.out.println(abstraction.demonstratePilar());
+		System.out.println(abstraction.demonstratePillar());
 	}
 
 	/**
@@ -82,7 +85,7 @@ public class FourPilarsMain {
 	private static void polymorphism() {
 		Polymorphism polymorph = new Polymorphism();
 		
-		polymorph.setPilar("Polymorphism");
+		polymorph.setPillar("Polymorphism");
 		polymorph.setDefinition("Object-oriented programming (OOP) concept that refers to the "
 				+ "ability of a variable, function or object to take on multiple forms");
 		polymorph.setPurpose("A OOP language that features polymorphism allows developers to "
@@ -90,9 +93,27 @@ public class FourPilarsMain {
 		polymorph.setReference("Techopedia. https://www.techopedia.com/definition/28106/polymorphism-general-programming");
 
 		System.out.println(polymorph.toString());
-		System.out.println(polymorph.demonstratePilar());
-		System.out.println(polymorph.demonstratePilar("Polymorphism"));
+		System.out.println(polymorph.demonstratePillar());
+		System.out.println(polymorph.demonstratePillar("Polymorphism"));
+	}
+
+	/**
+	 * Method uses the Inheritance class which demonstrates inheritance.
+	 */
+	private static void inheritance() {
+		Inheritance inherent = new Inheritance();
 		
+		inherent.setPillar("Inheritance");
+		inherent.setDefinition("Inheritance is a mechanism where you can to derive a class "
+				+ "\n\tfrom another class for a hierarchy of classes that share a set of attributes and methods.[1]");
+		inherent.setPurpose("Inheritance allows programmers to create classes that are built upon existing classes,"
+				+ "\n\tto specify a new implementation while maintaining the same behaviors "
+				+ "\n\t(realizing an interface), to reuse code and to independently extend original "
+				+ "\n\tsoftware via public classes and interfaces.[2]");
+		inherent.setReference("[1]Stackify. https://stackify.com/oop-concept-inheritance/"
+							+ "\n\t[2]Wikipedia. https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)");
+		System.out.println(inherent.toString());
+		System.out.println(inherent.demonstratePillar());
 	}
 	
 

@@ -1,18 +1,24 @@
 /**
  * 
  */
-package com.oop.fourpilars.abstraction;
+package com.oop.fourpillars.abstraction;
 
-import com.oop.fourpilars.Pilar;
+import com.oop.fourpillars.Pillar;
 
 /**
  * @author cgrogan
  *
  */
-public class Abstraction extends Pilar {
+public class Abstraction extends Pillar {
 
+	/**
+	 * Method to demonstrate one of the four pillars
+	 */
 	@Override
-	public String demonstratePilar() {
+	public String demonstratePillar() {
+		/**
+		 * Extra complexity used to demonstrate abstraction
+		 */
 		String nameOfMethod = new Throwable().getStackTrace()[0].getMethodName();
 		String[] words = new String[] { "Method: ", nameOfMethod + "()", "\n\t", "This", "implementation", "demonstrates",
 				"abstraction.", "It", "hides", "the", "complexity", "of", "the", "behavior", "\n\t", "and", "it", "provides",

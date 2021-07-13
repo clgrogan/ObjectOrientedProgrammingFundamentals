@@ -1,18 +1,18 @@
 /**
  * 
  */
-package com.oop.fourpilars;
+package com.oop.fourpillars;
 
 /**
  * @author cgrogan
  *
  */
-public abstract class Pilar {
+public abstract class Pillar {
 	
 	/**
 	 *  Private fields declared only accessible via methods
 	 */
-	private String pilar;
+	private String pillar;
 	private String definition;
 	private String purpose;
 	private String reference;
@@ -21,19 +21,19 @@ public abstract class Pilar {
 	 * Abstract method which should be used to demonstrate this.pilar
 	 * @return
 	 */
-	public abstract String demonstratePilar();
+	public abstract String demonstratePillar();
 	
 	/**
-	 * @return the pilar
+	 * @return the pillar
 	 */
-	public String getPilar() {
-		return pilar;
+	public String getPillar() {
+		return pillar;
 	}
 	/**
-	 * @param pilar the pilar to set
+	 * @param pillar the pillar to set
 	 */
-	public void setPilar(String pilar) {
-		this.pilar = pilar;
+	public void setPillar(String pilar) {
+		this.pillar = pilar;
 	}
 	/**
 	 * @return the definition
@@ -73,10 +73,10 @@ public abstract class Pilar {
 	}
 	@Override
 	public String toString() {
-		return "\n" + pilar 
-				+ "\n\nDefinition of \""+ pilar + "\":"+ "\n\t" + definition
-				+ "\n\nPurpose of \""+ pilar + "\":"+ "\n\t" + purpose 
-				+ "\n\nReference for \""+ pilar + "\":"+ "\n\t" + reference
+		return "\n" + pillar 
+				+ "\n\nDefinition of \""+ pillar + "\":"+ "\n\t" + definition
+				+ "\n\nPurpose of \""+ pillar + "\":"+ "\n\t" + purpose 
+				+ "\n\nReference for \""+ pillar + "\":"+ "\n\t" + reference
 				;
 	}
 	

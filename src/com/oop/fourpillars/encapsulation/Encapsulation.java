@@ -1,4 +1,4 @@
-package com.oop.fourpilars.encapsulation;
+package com.oop.fourpillars.encapsulation;
 
 /**
  * Class used to demonstrate encapsulation
