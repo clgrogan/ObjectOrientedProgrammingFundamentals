@@ -5,6 +5,7 @@ package com.oop.fourpillars;
 
 import com.oop.fourpillars.abstraction.Abstraction;
 import com.oop.fourpillars.encapsulation.Encapsulation;
+import com.oop.fourpillars.inheritance.FakePillar;
 import com.oop.fourpillars.inheritance.Inheritance;
 import com.oop.fourpillars.polymorphism.Polymorphism;
 
@@ -24,7 +25,7 @@ public class FourPillarsMain {
 		polymorphism();
 		inheritance();
 		
-
+		fakePillar();
 	}
 
 
@@ -114,6 +115,22 @@ public class FourPillarsMain {
 							+ "\n\t[2]Wikipedia. https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)");
 		System.out.println(inherent.toString());
 		System.out.println(inherent.demonstratePillar());
+	}
+	
+	/**
+	 * Method demonstrates a minimal implementation of a class extending Pillar
+	 */
+	private static void fakePillar() {
+		FakePillar fake = new FakePillar();
+		
+		fake.setPillar("FakePillar");
+		fake.setDefinition("Fake Pillar Definition");
+		fake.setPurpose("The Fake Pillar's purpose. The Fake Pillar"
+				+ "\n\tdoes not really have a purpose except to demonstrate the power of inheritence.");
+		fake.setReference("The Fake Pillar. Has no references since it is a great big fake!");
+		
+		System.out.println(fake.toString());
+		System.out.println(fake.demonstratePillar());
 	}
 	
 

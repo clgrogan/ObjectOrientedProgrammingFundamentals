@@ -73,7 +73,7 @@ public abstract class Pillar {
 	}
 	@Override
 	public String toString() {
-		return "\n" + pillar 
+		return "\n\n" + pillar 
 				+ "\n\nDefinition of \""+ pillar + "\":"+ "\n\t" + definition
 				+ "\n\nPurpose of \""+ pillar + "\":"+ "\n\t" + purpose 
 				+ "\n\nReference for \""+ pillar + "\":"+ "\n\t" + reference
